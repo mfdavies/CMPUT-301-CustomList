@@ -39,10 +39,10 @@ public class CustomListTest {
     public void testDelete() {
         int numCities =  list.getCount();
         City city = new City("Regina", "Saskatchewan");
-        list.add(city);
+        list.addCity(city);
         assertEquals(numCities + 1, list.getCount());
         assertTrue(list.hasCity(city));
-        list.delete(city);
+        list.deleteCity(city);
         assertEquals(numCities, list.getCount());
         assertFalse(list.hasCity(city));
     }
