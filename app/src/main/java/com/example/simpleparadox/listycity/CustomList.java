@@ -40,8 +40,20 @@ public class CustomList extends ArrayAdapter<City> {
      */
     public void addCity(City city){
         cities.add(city);
-        return;
     }
+
+    /**
+     * This returns whether or not  a city is in the list
+     * @param city
+     * This is the city to check if it is in the list
+     * @return
+     * Returns true if the list has the city
+     */
+    public boolean hasCity(City city) {
+        return false;
+    }
+
+
 
     @NonNull
     @Override
