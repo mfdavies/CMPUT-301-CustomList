@@ -53,7 +53,13 @@ public class CustomList extends ArrayAdapter<City> {
         return cities.contains(city);
     }
 
-
+    /**
+     * This deletes a city from the list if the city exists
+     * @param city
+     * This is a candidate city to delete
+     */
+    public void delete(City city) {
+    }
 
     @NonNull
     @Override
