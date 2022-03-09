@@ -66,6 +66,15 @@ public class CustomList extends ArrayAdapter<City> {
         }
     }
 
+    /**
+     * This returns the number of cities in the list
+     * @return
+     * Return the number of cities in the list
+     */
+    public int countCities() {
+        return -1;
+    }
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {

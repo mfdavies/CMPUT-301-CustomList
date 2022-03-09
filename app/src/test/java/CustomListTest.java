@@ -34,7 +34,6 @@ public class CustomListTest {
         assertFalse(list.hasCity(cityFalse));
     }
 
-
     @Test
     public void testDelete() {
         int numCities =  list.getCount();
@@ -47,4 +46,16 @@ public class CustomListTest {
         assertFalse(list.hasCity(city));
     }
 
+    @Test
+    public void testCount() {
+        int numCities =  list.getCount();
+        City city1 = new City("Charlottetown", "Prince Edward Island");
+        list.addCity(city1);
+        assertEquals(numCities + 1, list.countCities());
+        City city2 = new City("Yellowknife", "Northwest Territories");
+        list.addCity(city2);
+        assertEquals(numCities + 2, list.countCities());
+        list.deleteCity(city1);
+        assertEquals(numCities + 1, list.countCities());
+    }
 }
